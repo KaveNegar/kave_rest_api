@@ -1,7 +1,7 @@
 module KaveRestApi
   class Lookup < KaveRestApi::RequestBase
     include Validatable
-    attr_accessor :receptor, :message,:unixdate,:type,:date,:localid,:sender
+    attr_accessor :receptor, :message,:unixdate,:type,:date,:localid,:sender, :token
     attr_reader   :response,:message_size
     validates_presence_of :token
     validates_presence_of :receptor
